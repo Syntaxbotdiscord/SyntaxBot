@@ -815,25 +815,7 @@ client.on('messageDelete', message => {
  
  
  
- 
- client.on('message', message => {
 
-     if (message.author.bot) return;
-    if (!message.channel.guild) return;
- 
-    
-
-if(message.content.startsWith(prefix + 'bot')) {
-        const embed = new Discord.RichEmbed()
-            .setColor("RANDOM")
-            .setDescription(`Servers🌐 ${client.guilds.size}
-Users👥 ${client.users.size}
-Channels📚 ${client.channels.size} `)
-        message.channel.sendEmbed(embed);
-    }
- 
-});
- 
  
  
  
